@@ -6,7 +6,7 @@ database_test:
   dbtable: "music"
 
 # service_type should be NodePort, ClusterIP or LoadBalancer
-service_type: NodePort
+service_type: LoadBalancer
 replicas: 1
 
 image:
