@@ -1,7 +1,9 @@
-kind: Service     
-apiVersion: v1     
+kind: Service
+apiVersion: v1
 metadata:
   name: {{ .Release.Name }} #from RELEASE NAME
+  labels:
+    app: {{ .Release.Name }}
 spec:
   selector:
     app: {{ .Release.Name }}    
